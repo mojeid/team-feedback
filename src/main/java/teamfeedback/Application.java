@@ -23,6 +23,7 @@ public class Application {
 	public CommandLineRunner demo(EmployeeRepository repository) {
 		return (args) -> {
 			// save a couple of Employees
+			repository.save(new Employee("Jakub", "Nowy"));
 			repository.save(new Employee("Jack", "Bauer"));
 			repository.save(new Employee("Chloe", "O'Brian"));
 			repository.save(new Employee("Kim", "Bauer"));
